@@ -1,7 +1,7 @@
 // HINT: You can delete this console.log after you no longer need it!
 console.log('JavaScript code has loaded!')
 // First, tell us your name
-let yourName = "Jane Doe" // HINT: Replace this with your own name!
+let yourName = "George Ochwo Owinyi" // HINT: Replace this with your own name!
 
 // We'll use these variables to track the counts of each cookie type
 let gb = 0 // Gingerbread
@@ -25,3 +25,33 @@ console.log('Gingerbread + button was clicked!')
 })
 
 // TODO: Hook up event listeners for the rest of the buttons
+
+function increase() {
+    var a = 1;
+    var textBox = document.getElementById("qty-gb");
+    textBox.value++;
+}
+function decrease(){
+    var textBox = document.getElementById("qty-gb");
+    textBox.value--;
+}
+
+function increase() {
+    var a = 1;
+    var textBox = document.getElementById("qty-cc");
+    textBox.value++;
+}
+function decrease(){
+    var textBox = document.getElementById("qty-cc");
+    textBox.value--;
+}
+
+function increase() {
+    var a = 1;
+    var textBox = document.getElementById("qty-sugar");
+    textBox.value++;
+}
+function decrease(){
+    var textBox = document.getElementById("qty-sugar");
+    textBox.value--;
+}
