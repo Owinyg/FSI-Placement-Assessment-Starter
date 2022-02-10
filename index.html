@@ -1,92 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Placement Exam Solution Code</title>
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-    <main>
-        <h1>Clever Cookie Bakery</h1>
-        <h2>
-            We have several cookie flavors available. Yum!<br>Tell us what you'd like!
-        </h2>
-        <section>
-            <div class="menu">
-                <h3>Gingerbread</h3>
-                <img src="assets/images/gingerbread.png" alt="Gingerbread cookie">
-                <div class="button-container">
-                     
-                    <button type="button" onclick="decrease()">-</button>
-                    <button type="button" onclick="increase()">+</button> 
-                   
-                   <!-- <button id="minus-gb">-</button>
-                   <button id="add-gb">+</button> -->
-                </div>
-            </div>
-            <div class="menu">
-                <h3>Chocolate Chip</h3>
-                <img src="assets/images/choc-chip.png" alt="chocolate chip cookie">
-                <div class="button-container">
-                    <button type="button2"  onclick="decrease()">-</button>
-                    <button type="button2"  onclick="increase()">+</button> 
+ <head>
+        <title></title>
+       <script src="script.js"></script>
+          
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Placement Exam Solution Code</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
 
-                   <!-- <button id="minus-cc">-</button>
-                    <button id="add-cc">+</button>-->
-                </div>
-            </div>
-            <div class="menu">
-                <h3>Sugar Sprinkle</h3>
-                <img src="assets/images/sugar-cookie.png" alt="Sugar Sprinkle Cookie">
-                <div class="button-container">
-                    <button type="button" onclick="decrease()">-</button>
-                    <button type="button" onclick="increase()">+</button> 
+        <body>
+            <main>
+                <h1>Clever Cookie Bakery</h1>
+                <h2>
+                    We have several cookie flavors available. Yum!<br>Tell us what you'd like!
+                </h2>
+                <p id ="total"></p>
+            <section>
+                <div class="menu">
+                    <h3>Gingerbread</h3>
+                    <img src="assets/images/gingerbread.png" alt="Gingerbread cookie">
+                    <div class="button-container">
 
-                   <!-- <button id="minus-sugar">-</button>
-                    <button id="add-sugar">+</button>-->
-                </div>
-            </div>
-        </section>
-        <hr>
-        <div class="summary">
-            <h2>Order Summary</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            Cookie Type
-                        </th>
-                        <th>
-                            Quantity
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Gingerbread</td>
-                       <!-- <td id="qty-gb">0</td>-->
-                        <td> <input id="qty-gb" value="0"> </td>
-                    </tr>
-                    <tr>
-                        <td>Chocolate Chip</td>
-                        <td> <input type="text" id="qty-cc" value="0"> </td>
-                    </tr>
-                    <tr>
-                        <td>Sugar Sprinkle</td>
-                       <td><input type="text" id="qty-sugar" value="0"></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>Total</th>
-                        <th><input type="text" id="Total" value="0"></th>
-                    </tr>
-                </tfoot>
-            </table>
+        <button type="button" onclick="decrease()">-</button>
+        <button type="button" onclick="increase()">+</button>
+    </div>
+</div>
+
+<div class="menu">
+    <h3>Chocolate Chip</h3>
+    <img src="assets/images/choc-chip.png" alt="chocolate chip cookie">
+    <div class="button-container">
+        <button type="button"  onclick="minus()">-</button>
+        <button type="button"  onclick="Plus()">+</button> 
+    </div>
+</div>
+
+<div class="menu">
+    <h3>Sugar Sprinkle</h3>
+    <img src="assets/images/sugar-cookie.png" alt="Sugar Sprinkle Cookie">
+    <div class="button-container">
+        <button type="button" onclick="sub()">-</button>
+        <button type="button" onclick="add()">+</button> 
+    </div>
+</div>
+</Section>
+<hr>
+
+<div class="summary">
+    <h2>Order Summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Cookie Type
+                </th>
+                <th>
+                    Quantity
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gingerbread</td>
+              <td> <input type="text" id="qty-gb" value="0"> </td>
+            </tr>
+            <tr>
+                <td>Chocolate Chip</td>
+                <td> <input type="text" id="qty-cc" value="0"> </td>
+            </tr>
+
+            <tr>
+                <td>Sugar Sprinkle</td>
+               <td><input type="text" id="qty-sugar" value="0"></td>
+            </tr>
+           
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th><input type="text" id="total" value="0"></th>
+            </tr>
+        </tfoot>
+        </table>
         </div>
         <div>
-            <h2 id="credit"></h2>
+           <h2>Created By George Ochwo Owinyi</h2>
         </div>
     </main>
     <footer>

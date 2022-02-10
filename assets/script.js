@@ -1,30 +1,4 @@
-// HINT: You can delete this console.log after you no longer need it!
-console.log('JavaScript code has loaded!')
-// First, tell us your name
-let yourName = "George Ochwo Owinyi" // HINT: Replace this with your own name!
 
-// We'll use these variables to track the counts of each cookie type
-let gb = 0 // Gingerbread
-let cc = 0 // Chocolate Chip
-let sugar = 0 // Sugar Sprinkle
-
-// selecting the element with an id of credit
-const credit = document.querySelector('#credit')
-// selecting the element with an id of add-gb
-const gbPlusBtn = document.querySelector('#add-gb')
-
-// Code to update name display
-credit.textContent = `Created by ${yourName}`
-
-// Event listener for clicks on the "+" button for Gingerbread cookies
-gbPlusBtn.addEventListener('click', function() {
-// HINT: You can delete this console.log after you no longer need it!
-console.log('Gingerbread + button was clicked!')
-
-// TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
-})
-
-// TODO: Hook up event listeners for the rest of the buttons
 
 function increase() {
     var a = 1;
@@ -36,22 +10,29 @@ function decrease(){
     textBox.value--;
 }
 
-function increase() {
+function Plus() {
     var a = 1;
     var textBox = document.getElementById("qty-cc");
     textBox.value++;
 }
-function decrease(){
+function minus(){
     var textBox = document.getElementById("qty-cc");
     textBox.value--;
 }
 
-function increase() {
+function add() {
     var a = 1;
     var textBox = document.getElementById("qty-sugar");
     textBox.value++;
 }
-function decrease(){
+function sub(){
     var textBox = document.getElementById("qty-sugar");
     textBox.value--;
 }
+
+//<p id = "total"></p>
+var gb = ("qty-gb");
+var cc = ("qty-cc");
+var sugar = ("qty-sugar");
+var results = gb + cc + sugar;
+document.getElementById("total").innerHTML = results;
